@@ -11,15 +11,15 @@ import Sidebar from "@/components/globals/Sidebar";
 export default function Page() {
   return (
     <>
-      {/* <NextStep />
+      <NextStep />
       <Career />
-      <Advantagies /> */}
-      {/* <Home /> */}
+      <Advantagies />
+      {/* <Home />
       {/* <AddJobBasics /> */}
       {/* <Review /> */}
       {/* <Messages /> */}
       {/* <Notification /> */}
-      <Sidebar />
+      {/* <Sidebar /> */}
     </>
   );
 }
