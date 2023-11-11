@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "inter";
+  src: local("inter"),
+    url("../fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+
+body {
+  font-family: inter;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("/select-arrow.svg") no-repeat right center;
+  padding-right: 30px; /* Adjust this value to increase or decrease arrow size */
+}
+
+/* You can style the select element further as needed */
+select.custom-select {
+  font-size: 16px !important;
+  /* Your select element styles here */
+}
+.line {
+  line-height: 60px !important;
+}
+.line2 {
+  line-height: 40px !important;
+}
+@media screen and (max-width: 1023px) {
+  .line {
+    line-height: 25px !important;
+  }
+  .line2 {
+    line-height: 20px !important;
+  }
+}
+.custom-shadow {
+  box-shadow: 0 8px 2px rgba(0, 0, 0, 0.2);
+}
