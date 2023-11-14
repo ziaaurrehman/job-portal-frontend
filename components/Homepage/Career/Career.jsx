@@ -21,7 +21,7 @@ export const Career = () => {
             Your career development is now easier!
           </h1>
           <p className="xl:text-[28px] text-lg lg:text-left text-center xl:leading-10 leading-8 lg:px-5 px-5 xl:px-0 font-normal tracking-[-0.5px]">
-            Discover Azerbaijan's premier platform for ambitious professionals,
+            Discover Azerbaijans premier platform for ambitious professionals,
             startups and top-tier corporations. At CorpConnect, we believe in
             creating opportunities, fostering growth and setting the gold
             standard for recruiting in the corporate space.

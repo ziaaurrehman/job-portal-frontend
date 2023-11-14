@@ -50,7 +50,7 @@ export default function Home() {
                           htmlFor="companyName"
                           className="md:text-[22px] text-base font-medium"
                         >
-                          Your company's name
+                          Your companys name
                         </label>
                         <Field
                           name="companyName"
@@ -73,7 +73,7 @@ export default function Home() {
                           htmlFor="numberOfEmployee"
                           className="md:text-[22px] text-base font-medium"
                         >
-                          Your company's number of employees
+                          Your companys number of employees
                         </label>
                         <Field
                           as="select"
@@ -84,7 +84,7 @@ export default function Home() {
                               : ""
                           }`}
                         >
-                          <option>Your company's number of employees </option>
+                          <option>Your companys number of employees </option>
                           <option value="male">male</option>
                           <option value="female">female</option>
                           <option value="other">other</option>
@@ -171,7 +171,7 @@ export default function Home() {
                           htmlFor="industry"
                           className="md:text-[22px] text-base font-medium"
                         >
-                          Company's industry
+                          Companys industry
                         </label>
                         <Field
                           as="select"
@@ -278,6 +278,7 @@ export default function Home() {
                                     width={0}
                                     sizes="1000vw"
                                     src="/Clip.svg"
+                                    alt="attachment"
                                     className="h-full w-full"
                                   />
                                 </div>

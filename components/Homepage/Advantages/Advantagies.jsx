@@ -28,8 +28,8 @@ export const Advantagies = () => {
                   <div className="h-[5px] w-[5px] rounded-full bg-black"></div>
                 </div>
                 <p className="font-base font-medium capitalize  tracking-[-0.5px]">
-                  Exclusive opportunities: <br className="xl:block hidden" />{" "}
-                  Selected job opportunities from the country's leading
+                  Exclusive opportunities: <br className="xl:block hidden" />
+                  Selected job opportunities from the countrys leading
                   companies.
                 </p>
               </li>
@@ -82,7 +82,7 @@ export const Advantagies = () => {
                 </div>
                 <p className="font-base font-medium capitalize tracking-[-0.5px]">
                   Analytics: Statistics <br className="xl:block hidden" /> about
-                  your <br className="xl:block hidden" /> company's ads.
+                  your <br className="xl:block hidden" /> companys ads.
                 </p>
               </li>
               <li className="w-full">

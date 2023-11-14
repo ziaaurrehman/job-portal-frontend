@@ -69,7 +69,7 @@ export default function AllMessages() {
                 <p className="text-[13px] font-normal">Sep 21, 2023.</p>
               </div>
               <p className="text-[15px] font-normal">
-                I'm available for an interview on...
+                I am available for an interview on...
               </p>
             </div>
           </div>

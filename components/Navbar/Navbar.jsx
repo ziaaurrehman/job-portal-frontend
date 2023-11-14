@@ -17,11 +17,14 @@ export const Navbar = () => {
       <div className="md:h-[86px] h-16 md:pr-5 md:mt-10 mt-5 pr-5 rounded-[10px] bg-[#321D3C] xl:pr-2 w-full flex justify-between items-center">
         <div className="relative lg:w-1/4 w-full flex justify-start items-center h-full">
           <Link href="/">
-            <div className="h-full flex justify-start items-center py-2">
-              <img
+            <div className="flex justify-start h-[50px] md:w-[100px] w-[50px] items-center py-2">
+              <Image
                 src="/logo1.svg"
                 alt="logo"
-                className="rounded-full h-full"
+                height={0}
+                width={0}
+                sizes="100vw"
+                className="rounded-full w-full h-full"
               />
               <button className="text-white text-xl font-medium">
                 CorpConnect
@@ -70,7 +73,7 @@ export const Navbar = () => {
           {/* Mobile Navbar */}
           <div className="xl:hidden">
             <button onClick={toggleNavbar}>
-              <img src="/menu.svg" alt="menu" />
+              <Image src="/menu.svg" height={30} width={30} alt="menu" />
             </button>
 
             <div
@@ -78,8 +81,17 @@ export const Navbar = () => {
                 isOpen ? "" : "transform translate-x-full"
               }`}
             >
-              <div className="flex justify-end mt-2" onClick={toggleNavbar}>
-                <img src="/cancel.svg" alt="cancel" />
+              <div className="flex justify-end mt-2 " onClick={toggleNavbar}>
+                <div className="md:h-[30px] md:w-[30px] h-4 w-4">
+                  <Image
+                    src="/cancel.svg"
+                    height={0}
+                    width={0}
+                    sizes="100vw"
+                    alt="cancel"
+                    className="w-full h-full"
+                  />
+                </div>
               </div>
 
               <ul className="flex flex-col mt-3 space-y-2 justify-center items-center">
@@ -177,17 +189,18 @@ export const Navbar = () => {
               </div>
             </div>
           </Link>
-
-          <div className="h-10 w-11">
-            <Image
-              height={0}
-              width={0}
-              sizes="100vw"
-              src="/profile-icon.svg"
-              alt="notification"
-              className="h-full w-full"
-            />
-          </div>
+          <Link href="/page/dashboard/message">
+            <div className="h-10 w-11">
+              <Image
+                height={0}
+                width={0}
+                sizes="100vw"
+                src="/profile-icon.svg"
+                alt="notification"
+                className="h-full w-full"
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </Container>

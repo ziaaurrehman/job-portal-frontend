@@ -127,6 +127,7 @@ export const Apply = () => {
                                       width={0}
                                       sizes="1000vw"
                                       src="/Clip.svg"
+                                      alt="attachment"
                                       className="h-full w-full"
                                     />
                                   </div>

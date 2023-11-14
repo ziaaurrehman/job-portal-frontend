@@ -35,8 +35,8 @@ export default function MessageBox() {
             <p className="text-[15px] font-normal">2:10 PM</p>
           </div>
           <p className="text-xl font-normal">
-            Hello, I feel like I'd be a great fit for this position and would
-            love to talk more about my experience. I'm available for an
+            Hello, I feel like I would be a great fit for this position and
+            would love to talk more about my experience. I am available for an
             interview on...
           </p>
         </div>
