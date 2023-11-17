@@ -5,7 +5,7 @@ import { Cancel, Check, QuestionMark } from "../icons/icons";
 
 export default function CandidateCard() {
   const [tick, setTick] = useState(false);
-  const [cANCEL, setCancel] = useState(false);
+  const [cancel, setCancel] = useState(false);
   const [questionMark, setQuestionMark] = useState(false);
 
   const data = [
@@ -26,13 +26,13 @@ export default function CandidateCard() {
     },
   ];
   return (
-    <div className="space-y-5 md:mt-10 mt-5 w-full">
+    <div className="space-y-5 w-full">
       {data.map((obj, _) => (
         <div
           key={obj.id}
-          className="border-[5px] md:py-10 py-5 px-2 w-full justify-between flex lg:flex-row flex-col space-x-10 lg:items-center space-y-5 rounded-[10px] border-[#735681]"
+          className="border md:py-10 py-5 px-2 w-full justify-between flex lg:flex-row flex-col space-x-10 lg:items-center lg:space-y-5 space-y-3 border-[#5E3D6E]"
         >
-          <div className="flex md:pl-10 px-2">
+          <div className="flex lg:pl-10 px-2">
             <div className="flex space-x-3">
               <div className="flex items-start mt-2 mb-4">
                 <input
@@ -59,12 +59,12 @@ export default function CandidateCard() {
             </div>
           </div>
 
-          <div className="md:space-x-10 flex md:flex-row flex-col h-full">
-            <div className="flex flex-col h-[73px] justify-center items-start">
+          <div className="lg:space-x-10 flex lg:space-y-0 space-y-3 lg:flex-row flex-col h-full">
+            <div className="flex flex-col lg:h-[73px] justify-center items-start">
               <p className="text-base font-medium">1/1 required</p>
               <p className="text-base font-medium">question met</p>
             </div>
-            <div className="flex flex-col h-[73px] justify-center items-start">
+            <div className="flex flex-col lg:h-[73px] justify-center items-start">
               <div className="flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +76,8 @@ export default function CandidateCard() {
                   <path
                     d="M8.7749 14.3217L11.6385 17.55L18.2249 10.125"
                     stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                 </svg>
@@ -108,7 +108,7 @@ export default function CandidateCard() {
               <div
                 onClick={() => setCancel(true)}
                 className={`h-full flex w-[50px] overflow-hidden ${
-                  Cancel ? "bg-[#FF0000] text-white" : "text-black"
+                  cancel ? "bg-[#FF0000] text-white" : "text-black"
                 } justify-center items-center`}
               >
                 <Cancel />

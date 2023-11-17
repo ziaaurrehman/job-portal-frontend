@@ -14,7 +14,7 @@ export const Navbar = () => {
   return (
     <Container>
       {/* Desktop Navbar */}
-      <div className="md:h-[86px] h-16 md:pr-5 md:mt-10 mt-5 pr-5 rounded-[10px] bg-[#321D3C] xl:pr-2 w-full flex justify-between items-center">
+      <div className="md:h-[86px] h-16 md:pr-5 md:my-10 my-5 pr-5 rounded-[10px] bg-[#321D3C] xl:pr-2 w-full flex justify-between items-center">
         <div className="relative lg:w-1/4 w-full flex justify-start items-center h-full">
           <Link href="/">
             <div className="flex justify-start h-[50px] md:w-[100px] w-[50px] items-center py-2">
@@ -65,6 +65,11 @@ export const Navbar = () => {
               <Link href="/page/post-job">
                 <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                   Post a Job
+                </li>
+              </Link>
+              <Link href="/page/dashboard/notification">
+                <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
+                  Dashboard
                 </li>
               </Link>
             </ul>
@@ -144,64 +149,6 @@ export const Navbar = () => {
             Sign Up
           </button>
         </Link>
-      </div>
-      <div className="py-5 flex items-center">
-        <h1 className="md:text-5xl w-full md:text-left text-center text-xl font-normal line">
-          Notification
-        </h1>
-        <div className="flex space-x-3">
-          <Link href="/page/messages">
-            <div className="relative w-11 h-10">
-              <div className="h-10 absolute w-11">
-                <Image
-                  height={0}
-                  width={0}
-                  sizes="100vw"
-                  src="/notification.svg"
-                  alt="notification"
-                  className="h-full w-full"
-                />
-              </div>
-              <div className="h-10 w-11 absolute -right-5 -top-3">
-                <div className="h-8 w-8 rounded-full bg-[#F44336] flex justify-center items-center text-white">
-                  1
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/page/notification">
-            <div className="relative w-11 h-10">
-              <div className="h-10 absolute w-11">
-                <Image
-                  height={0}
-                  width={0}
-                  sizes="100vw"
-                  src="/bell-icon.svg"
-                  alt="notification"
-                  className="h-full w-full"
-                />
-              </div>
-              <div className="h-10 w-11 absolute -right-5 -top-3">
-                <div className="h-8 w-8 rounded-full bg-[#F44336] flex justify-center items-center text-white">
-                  1
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/page/dashboard/message">
-            <div className="h-10 w-11">
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                src="/profile-icon.svg"
-                alt="notification"
-                className="h-full w-full"
-              />
-            </div>
-          </Link>
-        </div>
       </div>
     </Container>
   );

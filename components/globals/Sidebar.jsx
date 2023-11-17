@@ -6,26 +6,59 @@ import {
   Messages,
   Device,
   Interview,
-  ArrowIcon,
+  Jobs,
+  Candidates,
 } from "../icons/icons";
 import Link from "next/link";
 
-export default function Sidebar() {
-  const [color, setColor] = useState("#858585");
+export default function Sidebar({ setHeading }) {
+  // const [color, setColor] = useState("#858585");
+  const [match, setMatch] = useState(0);
+  const data = [
+    { id: 1, icon: <Edit />, title: "Edit profile", link: "editProfile" },
+    {
+      id: 2,
+      icon: <Notification />,
+      title: "Notification",
+      link: "notification",
+    },
+
+    { id: 3, icon: <Device />, title: "Applied jobs", link: "applied" },
+    { id: 4, icon: <Messages />, title: "Messages", link: "message" },
+    { id: 5, icon: <Interview />, title: "Interviews", link: "interview" },
+    { id: 6, icon: <Jobs />, title: "Jobs", link: "jobs" },
+    { id: 7, icon: <Candidates />, title: "Candidates", link: "candidates" },
+  ];
+
   return (
     <>
-      <div className="w-full xl:px-10 md:flex px-2 xl:py-0 py-5 xl:block hidden items-center xl:h-screen pt-28 lg:px-5 xl:space-x-0 lg:space-x-10 space-x-5 xl:border-r xl:border-b-0 md:border-b border-black">
-        <button
+      <div className="w-full xl:px-10 md:flex px-2 xl:py-0 py-5 xl:block hidden items-center xl:h-screen xl:pt-28 lg:px-5 xl:space-x-0 lg:space-x-10 space-x-5 xl:border-r xl:border-b-0 md:border-b border-black">
+        {data.map((obj, _) => (
+          <Link key={obj.id} href={`/page/dashboard/${obj.link}`}>
+            <button
+              onClick={() => {
+                setMatch(obj.id);
+                setHeading(obj.title);
+              }}
+              className={`xl:text-[28px] xl:text-2xl lg:text-base text-sm xl:space-x-5 xl:pt-20 mt-0 flex justify-center items-center ${
+                obj.id === match ? "text-[#A117E8]" : "text-[#858585]"
+              } font-semibold`}
+            >
+              {obj.icon}
+              <p>{obj.title}</p>
+            </button>
+          </Link>
+        ))}
+        {/* <button
           onClick={() => setColor("#A117E8")}
-          className={`xl:text-[28px] xl:text-2xl lg:text-base text-sm xl:space-x-5 xl:pt-16 pt-0 flex justify-center items-center text-[${color}] font-semibold`}
+          className={`xl:text-[28px] xl:text-2xl lg:text-base text-sm xl:space-x-5 flex justify-center items-center text-[${color}] font-semibold`}
         >
-          <div>
-            <Edit />
-          </div>
-          <p>Edit profile</p>
-        </button>
+          <Edit />
 
-        <Link href="/page/dashboard/notification">
+          <p>Edit profile</p>
+        </button> */}
+
+        {/* <Link href="/page/dashboard/notification">
           <button
             onClick={() => setColor("#A117E8")}
             className={`xl:text-[28px] xl:text-2xl lg:text-base text-sm xl:space-x-5 xl:mt-10 mt-0 flex justify-center items-center text-[${color}] font-semibold`}
@@ -63,7 +96,7 @@ export default function Sidebar() {
             <Interview />
             <p>Interviews</p>
           </button>
-        </Link>
+        </Link> */}
       </div>
 
       {/* <div className="w-full">
@@ -94,7 +127,7 @@ export default function Sidebar() {
       </div> */}
 
       <div className="w-full md:hidden px-2 py-5 flex flex-col items-center justify-center md:pt-28 pt-5 lg:px-5 border-b border-black">
-        <button
+        {/* <button
           onClick={() => setColor("#A117E8")}
           className={`xl:text-[28px] xl:text-2xl w-36 justify-between lg:text-base text-sm pt-5 flex items-center text-[${color}] font-semibold`}
         >
@@ -102,21 +135,26 @@ export default function Sidebar() {
             <Edit />
           </div>
           <p>Edit profile</p>
-        </button>
+        </button> */}
 
-        <Link href="/page/dashboard/notification">
-          <button
-            onClick={() => setColor("#A117E8")}
-            className={`xl:text-[28px] xl:text-2xl w-36 lg:text-base text-sm mt-5 flex justify-between items-center text-[${color}] font-semibold`}
-          >
-            <div className="w-10">
-              <Notification />
-            </div>
-            <p>Notification</p>
-          </button>
-        </Link>
+        {data.map((obj, _) => (
+          <Link key={obj.id} href={`/page/dashboard/${obj.link}`}>
+            <button
+              onClick={() => {
+                setMatch(obj.id);
+                setHeading(obj.title);
+              }}
+              className={`xl:text-[28px] xl:text-2xl w-36 lg:text-base text-sm mt-5 flex justify-between items-center ${
+                obj.id === match ? "text-[#A117E8]" : "text-[#858585]"
+              } font-semibold`}
+            >
+              <div className="w-10">{obj.icon}</div>
+              <p>{obj.title}</p>
+            </button>
+          </Link>
+        ))}
 
-        <Link href="/page/dashboard/applied">
+        {/* <Link href="/page/dashboard/applied">
           <button
             onClick={() => setColor("#A117E8")}
             className={`xl:text-[28px] xl:text-2xl whitespace-nowrap w-36 justify-between lg:text-base text-sm space-x-5 mt-5 flex items-center text-[${color}] font-semibold`}
@@ -126,9 +164,9 @@ export default function Sidebar() {
             </div>
             <p>Applied jobs</p>
           </button>
-        </Link>
+        </Link> */}
 
-        <Link href="/page/dashboard/message">
+        {/* <Link href="/page/dashboard/message">
           <button
             onClick={() => setColor("#A117E8")}
             className={`xl:text-[28px] xl:text-2xl w-36 justify-between lg:text-base text-sm space-x-5 mt-5 flex items-center text-[${color}] font-semibold`}
@@ -138,9 +176,9 @@ export default function Sidebar() {
             </div>
             <p>Messages</p>
           </button>
-        </Link>
+        </Link> */}
 
-        <Link href="/page/dashboard/interview">
+        {/* <Link href="/page/dashboard/interview">
           <button
             onClick={() => setColor("#A117E8")}
             className={`xl:text-[28px] xl:text-2xl w-36 justify-between lg:text-base text-sm space-x-5 mt-5 flex items-center text-[${color}] font-semibold`}
@@ -150,7 +188,7 @@ export default function Sidebar() {
             </div>
             <p>Interviews</p>
           </button>
-        </Link>
+        </Link> */}
       </div>
     </>
   );

@@ -3,24 +3,24 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 export default function JobCard() {
-  const [flyer, setFlyer] = React.useState(false);
+  const [flyer, setFlyer] = useState(false);
 
   const data = [
     {
       id: 1,
     },
-    // {
-    //   id: 2,
-    // },
-    // {
-    //   id: 3,
-    // },
-    // {
-    //   id: 4,
-    // },
-    // {
-    //   id: 5,
-    // },
+    {
+      id: 2,
+    },
+    {
+      id: 3,
+    },
+    {
+      id: 4,
+    },
+    {
+      id: 5,
+    },
   ];
   return (
     <div className="space-y-5 md:mt-10 mt-5 w-full">
