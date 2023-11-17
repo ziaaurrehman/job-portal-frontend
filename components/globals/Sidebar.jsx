@@ -26,8 +26,8 @@ export default function Sidebar({ setHeading }) {
     { id: 3, icon: <Device />, title: "Applied jobs", link: "applied" },
     { id: 4, icon: <Messages />, title: "Messages", link: "message" },
     { id: 5, icon: <Interview />, title: "Interviews", link: "interview" },
-    { id: 6, icon: <Jobs />, title: "Jobs", link: "jobs" },
-    { id: 7, icon: <Candidates />, title: "Candidates", link: "candidates" },
+    // { id: 6, icon: <Jobs />, title: "Jobs", link: "jobs" },
+    // { id: 7, icon: <Candidates />, title: "Candidates", link: "candidates" },
   ];
 
   return (
