@@ -39,21 +39,21 @@ export const SearchJobs = () => {
         <h1 className="xl:text-[40px] capitalize w-full text-2xl font-medium tracking-[-0.5px] xl:leading-[50px]">
           search jobs
         </h1>
-        <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 md:mt-20 mt-10 xl:gap-x-40 gap-x-3 gap-y-5 xl:gap-y-10">
+        <div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 md:mt-20 mt-10  gap-x-3 gap-y-5 xl:gap-y-10">
           <input
             type="text"
             placeholder="Keywords/job title"
-            className="xl:w-[362px] w-full xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] pl-4 placeholder:text-[22px] placeholder:font-bold placeholder:text-[#2D2F30] rounded-[10px]"
+            className="w-full xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] pl-4 placeholder:text-[22px] placeholder:font-bold placeholder:text-[#2D2F30] rounded-[10px]"
           />
           <input
             type="text"
             placeholder="Location"
-            className="xl:w-[362px] w-full xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] pl-4 placeholder:text-[22px] placeholder:font-bold placeholder:text-[#2D2F30] rounded-[10px]"
+            className="w-full xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] pl-4 placeholder:text-[22px] placeholder:font-bold placeholder:text-[#2D2F30] rounded-[10px]"
           />
           <input
             type="text"
             placeholder="Distance"
-            className="xl:w-[362px] xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] pl-4 placeholder:text-[22px] placeholder:font-bold placeholder:text-[#2D2F30] rounded-[10px]"
+            className="xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] pl-4 placeholder:text-[22px] placeholder:font-bold placeholder:text-[#2D2F30] rounded-[10px]"
           />
           <button className="xl:w-[203px] xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] text-[22px] font-bold bg-white text-[#2D2F30] rounded-[10px]">
             Find jobs
