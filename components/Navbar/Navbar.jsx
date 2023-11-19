@@ -54,9 +54,9 @@ export const Navbar = () => {
               <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                 My Jobs
               </li>
-              <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
+              {/* <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                 My Clients
-              </li>
+              </li> */}
               <Link href="/page/about-us">
                 <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                   About Us

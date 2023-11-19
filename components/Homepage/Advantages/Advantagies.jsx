@@ -1,4 +1,5 @@
 import { Container } from "@/components/globals/Container";
+import Link from "next/link";
 import React from "react";
 
 export const Advantagies = () => {
@@ -42,9 +43,11 @@ export const Advantagies = () => {
                 </p>
               </li>
               <li className="w-full">
-                <button className="w-[184px] md:h-[70px] h-[50px] bg-[#6F2691] md:mt-8 mt-5 rounded-[5px] text-white md:text-xl text-lg font-semibold">
-                  Search a Job
-                </button>
+                <Link href="/page/search-job">
+                  <button className="w-[184px] md:h-[70px] h-[50px] bg-[#6F2691] md:mt-8 mt-5 rounded-[5px] text-white md:text-xl text-lg font-semibold">
+                    Search a Job
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
@@ -86,9 +89,11 @@ export const Advantagies = () => {
                 </p>
               </li>
               <li className="w-full">
-                <button className="w-[184px] md:h-[70px] h-[50px] bg-[#6F2691] md:mt-8 mt-5 rounded-[5px] text-white md:text-xl text-lg font-semibold">
-                  Post a Job
-                </button>
+                <Link href="/page/post-job">
+                  <button className="w-[184px] md:h-[70px] h-[50px] bg-[#6F2691] md:mt-8 mt-5 rounded-[5px] text-white md:text-xl text-lg font-semibold">
+                    Post a Job
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
