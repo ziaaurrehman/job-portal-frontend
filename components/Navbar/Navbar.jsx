@@ -51,9 +51,11 @@ export const Navbar = () => {
                   My Clients
                 </li>
               </Link>
-              <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
-                My Jobs
-              </li>
+              <Link href="/page/dashboard/applied">
+                <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
+                  My Jobs
+                </li>
+              </Link>
               {/* <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                 My Clients
               </li> */}
@@ -118,21 +120,24 @@ export const Navbar = () => {
                   </li>
                 </Link>
 
-                <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
-                  My Jobs
-                </li>
-                <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
+                <Link href="/page/dashboard/applied">
+                  <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
+                    My Jobs
+                  </li>
+                </Link>
+                {/* <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                   My Clients
-                </li>
+                </li> */}
                 <Link href="/page/about-us">
                   <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                     About Us
                   </li>
                 </Link>
-
-                <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
-                  Post a Job
-                </li>
+                <Link href="/page/post-job">
+                  <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
+                    Post a Job
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
