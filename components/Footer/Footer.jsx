@@ -15,31 +15,45 @@ export const Footer = () => {
         <div className="grid lg:grid-cols-5 space-y-5 md:space-y-0 md:grid-cols-4 grid-cols-1 mt-10">
           <div className="flex md:block justify-center items-start flex-col">
             <h1 className="text-base font-bold text-white">For Jobseekers</h1>
-            <ul className="mt-6 space-y-3 md:block flex items-start flex-col">
-              <li className="text-base font-normal text-white">Search Jobs</li>
-              <li className="text-base font-normal text-white">Employers</li>
-              <li className="text-base font-normal text-white">Agencies</li>
+            <ul className="mt-6 md:space-y-3 space-y-1 md:block flex items-start flex-col">
+              <li className="md:text-base text-sm font-normal text-white">
+                Search Jobs
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
+                Employers
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
+                Agencies
+              </li>
             </ul>
           </div>
           <div className="flex md:block justify-center items-start flex-col">
             <h1 className="text-base font-bold text-white">Popular</h1>
-            <ul className="mt-6 space-y-3 md:block flex items-start flex-col">
-              <li className="text-base font-normal text-white">Search Jobs</li>
-              <li className="text-base font-normal text-white">Employers</li>
-              <li className="text-base font-normal text-white">Agencies</li>
+            <ul className="mt-6 md:space-y-3 space-y-1 md:block flex items-start flex-col">
+              <li className="md:text-base text-sm font-normal text-white">
+                Search Jobs
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
+                Employers
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
+                Agencies
+              </li>
             </ul>
           </div>
           <div className="flex md:block justify-center items-start flex-col">
             <h1 className="text-base font-bold text-white">Recruiters</h1>
-            <ul className="mt-6 space-y-3 md:block flex items-start flex-col">
-              <li className="text-base font-normal text-white">
+            <ul className="mt-6 md:space-y-3 space-y-1 md:block flex items-start flex-col">
+              <li className="md:text-base text-sm font-normal text-white">
                 CV Database Access
               </li>
-              <li className="text-base font-normal text-white">
+              <li className="md:text-base text-sm font-normal text-white">
                 Advertise Jobs
               </li>
-              <li className="text-base font-normal text-white">Search CVs</li>
-              <li className="text-base font-normal text-white">
+              <li className="md:text-base text-sm font-normal text-white">
+                Search CVs
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
                 Test CV Search
               </li>
             </ul>
@@ -48,12 +62,22 @@ export const Footer = () => {
             <h1 className="text-base font-bold text-white">
               About the creation
             </h1>
-            <ul className="mt-6 space-y-3 md:block flex items-start flex-col">
-              <li className="text-base font-normal text-white">About Us </li>
-              <li className="text-base font-normal text-white">Contact Us</li>
-              <li className="text-base font-normal text-white">Work for Us</li>
-              <li className="text-base font-normal text-white">Help</li>
-              <li className="text-base font-normal text-white">FAQ</li>
+            <ul className="mt-6 md:space-y-3 space-y-1 md:block flex items-start flex-col">
+              <li className="md:text-base text-sm font-normal text-white">
+                About Us
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
+                Contact Us
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
+                Work for Us
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
+                Help
+              </li>
+              <li className="md:text-base text-sm font-normal text-white">
+                FAQ
+              </li>
             </ul>
           </div>
           <div className="md:col-span-full w-full lg:mt-0 mt-5 lg:col-span-1 lg:block flex flex-col justify-center items-center">
