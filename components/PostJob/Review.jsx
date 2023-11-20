@@ -3,6 +3,7 @@ import React from "react";
 import { Container } from "@/components/globals/Container";
 import Image from "next/image";
 import Link from "next/link";
+import { Eye, NextArrow, PrevArrow } from "../icons/icons";
 
 export default function Review() {
   const data = [
@@ -119,54 +120,22 @@ export default function Review() {
             ))}
           </div>
 
-          <div className="flex justify-between md:mt-24 mt-10 items-center gap-x-1">
+          <div className="flex justify-between space-y-2 md:space-y-0 w-full flex-col md:flex-row md:mt-24 mt-10 md:items-center gap-x-1">
             <Link href="/page/add-job-basic">
-              <button className="lg:w-[160px] px-3 lg:px-0 xl:h-[86px] md:h-[70px] h-10 flex justify-center items-center md:gap-x-6 gap-x-2 rounded-[10px] bg-[#6F2691]">
-                <div className="lg:h-[37px] lg:w-[37px] md:h-[25px] md:w-[25px] h-[15px] w-[15px]">
-                  <Image
-                    height={0}
-                    width={0}
-                    sizes="100vw"
-                    src="/left-arrow.svg"
-                    alt="avatar"
-                    className="h-full w-full"
-                  />
-                </div>
-
-                <p className="text-[22px] text-sm text-white font-semibold">
-                  Back
-                </p>
+              <button className="lg:w-[160px] w-full border hover:border-[#6F2691] text-[22px] text-sm text-white font-semibold hover:bg-transparent hover:text-[#6F2691] px-3 lg:px-0 xl:h-[86px] md:h-[70px] h-10 flex justify-center items-center md:gap-x-6 gap-x-2 rounded-[10px] bg-[#6F2691]">
+                <PrevArrow height={25} width={25} />
+                Back
               </button>
             </Link>
-            <div className="flex lg:gap-x-10 gap-x-1">
-              <button className="lg:w-[238px] xl:h-[86px] px-3 lg:px-0 md:h-[70px] h-10 border border-black flex justify-center items-center md:gap-x-10 gap-x-3 rounded-[10px]">
-                <p className="text-[22px] text-sm font-semibold">Preview</p>
-                <div className="lg:h-[37px] lg:w-[37px] md:h-[25px] md:w-[25px] h-[15px] w-[15px]">
-                  <Image
-                    height={0}
-                    width={0}
-                    sizes="100vw"
-                    src="/eye.svg"
-                    alt="avatar"
-                    className="h-full w-full"
-                  />
-                </div>
+            <div className="flex flex-col justify-end sm:w-full w-auto space-y-2 md:space-y-0 md:flex-row lg:gap-x-10 gap-x-1">
+              <button className="lg:w-[238px] w-full xl:h-[86px] text-[22px] text-sm font-semibold px-3 lg:px-0 md:h-[70px] h-10 border hover:bg-[#6F2691] hover:text-white border-black flex justify-center items-center md:gap-x-10 gap-x-3 rounded-[10px]">
+                Preview
+                <Eye height={25} width={25} />
               </button>
               <Link href="/page/success">
-                <button className="lg:w-[221px] px-3 lg:px-0 xl:h-[86px] md:h-[70px] h-10 flex justify-center items-center md:gap-x-8 gap-x-2 rounded-[10px] bg-[#6F2691]">
-                  <p className="text-[22px] text-sm text-white font-semibold">
-                    Confirm
-                  </p>
-                  <div className="lg:h-[37px] lg:w-[37px] md:h-[25px] md:w-[25px] h-[15px] w-[15px]">
-                    <Image
-                      height={0}
-                      width={0}
-                      sizes="100vw"
-                      src="/right-arrow.svg"
-                      alt="avatar"
-                      className="h-full w-full"
-                    />
-                  </div>
+                <button className="lg:w-[221px] w-full text-[22px] text-sm text-white font-semibold border px-3 hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] lg:px-0 xl:h-[86px] md:h-[70px] h-10 flex justify-center items-center md:gap-x-8 gap-x-2 rounded-[10px] bg-[#6F2691]">
+                  Confirm
+                  <NextArrow height={25} width={25} />
                 </button>
               </Link>
             </div>

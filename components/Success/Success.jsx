@@ -50,7 +50,7 @@ export const Success = () => {
             <Link href="/page/search-job">
               <button
                 type="submit"
-                className="md:text-2xl text-xs font-bold border text-white border-white md:px-[30px] px-5 bg-[#6F2691] md:w-[369px] w-[200px] md:h-[88px] h-12 md:mt-3 rounded-[10px]"
+                className="md:text-2xl text-xs hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] font-bold border text-white border-white md:px-[30px] px-5 bg-[#6F2691] md:w-[369px] w-[200px] md:h-[88px] h-12 md:mt-3 rounded-[10px]"
               >
                 Return to job search
               </button>

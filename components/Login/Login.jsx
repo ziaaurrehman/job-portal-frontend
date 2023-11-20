@@ -87,7 +87,7 @@ export const Login = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="md:text-[22px] text-lg font-bold border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:py-5 py-2 md:mt-3 rounded-[10px]"
+                      className="md:text-[22px] text-lg hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] font-bold border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:py-5 py-2 md:mt-3 rounded-[10px]"
                     >
                       Login
                     </button>

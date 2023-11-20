@@ -7,13 +7,13 @@ export const NextStep = () => {
     <Container>
       <div className="flex mt-20 lg:flex-row flex-col space-y-5 lg:space-y-0 lg:space-x-3">
         <div className="lg:w-1/2 w-full border-[5px] flex flex-col items-center border-[#521572] rounded-[10px] py-5 px-5 xl:px-14">
-          <h1 className="xl:text-[64px] md:text-left text-center md:text-5xl text-3xl font-semibold tracking-[-0.5px] md:leading-[50px] xl:leading-[100px]">
+          <h1 className="xxl:text-[64px] md:text-left text-center md:text-5xl text-3xl font-semibold tracking-[-0.5px] md:leading-[50px] xl:leading-[70px]">
             The next step to success
           </h1>
-          <p className="xl:text-3xl md:text-2xl text-xl md:text-left xl:-ml-6 xl:py-5 text-center md:leading-[100px] font-normal tracking-[-0.5px]">
+          <p className="xl:text-3xl w-full md:text-2xl text-xl md:text-left xl:py-5 text-center md:leading-[50px] font-normal tracking-[-0.5px]">
             CorpConnect-Bridge to corporate life
           </p>
-          <h2 className="md:text-3xl text-2xl xl:mt-2 font-semibold xl:leading-[100px] leading-[50px] tracking-[-0.5px] capitalize">
+          <h2 className="md:text-3xl text-2xl xl:mt-2 font-semibold xl:leading-[60px] leading-[50px] tracking-[-0.5px] capitalize">
             connect
           </h2>
         </div>

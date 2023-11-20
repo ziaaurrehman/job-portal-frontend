@@ -398,7 +398,7 @@ export default function CreateAccount() {
                         <button
                           type="submit"
                           // disabled={isSubmitting}
-                          className="md:text-[26px] flex justify-center items-center space-x-3 text-lg font-bold border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:w-[254px] w-[150px] md:h-[70px] h-12 md:mt-3 rounded-[10px]"
+                          className="md:text-[26px] hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] flex justify-center items-center space-x-3 text-lg font-bold border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:w-[254px] w-[150px] md:h-[70px] h-12 md:mt-3 rounded-[10px]"
                         >
                           <p>Continue</p>
                           <div>

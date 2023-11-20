@@ -37,7 +37,7 @@ export default function NotRegistered() {
         ))}
       </ul>
       <Link href="/page/signup">
-        <button className="w-[152px] border-2 font-bold mt-12 text-[22px] border-[#FFFFFF] rounded-[10px] md:h-[70px] h-12 text-white bg-[#6F2691]">
+        <button className="w-[152px] border hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] font-bold mt-12 text-[22px] border-[#FFFFFF] rounded-[10px] md:h-[70px] h-12 text-white bg-[#6F2691]">
           Register
         </button>
       </Link>

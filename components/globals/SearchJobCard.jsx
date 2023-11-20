@@ -27,7 +27,7 @@ export const SearchJobCard = ({ data }) => {
             {data.desc}
           </p>
           <Link href="/page/job-details">
-            <button className="w-[184px] md:py-5 py-3 px-[10px] rounded-[10px] text-white uppercase text-lg font-normal bg-[#6F2691]">
+            <button className="w-[184px] border hover:border-[#6F2691] hover:text-[#6F2691] hover:bg-transparent md:py-5 py-3 px-[10px] rounded-[10px] text-white uppercase text-lg font-normal bg-[#6F2691]">
               Apply Now
             </button>
           </Link>

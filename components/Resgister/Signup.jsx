@@ -150,7 +150,7 @@ export const Signup = () => {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="md:text-[22px] text-lg font-bold border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:w-[254px] w-[150px] md:h-[70px] h-12 md:mt-3 rounded-[10px]"
+                        className="md:text-[22px] text-lg font-bold hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:w-[254px] w-[150px] md:h-[70px] h-12 md:mt-3 rounded-[10px]"
                       >
                         Register
                       </button>

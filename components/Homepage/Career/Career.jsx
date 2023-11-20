@@ -17,10 +17,10 @@ export const Career = () => {
           />
         </div>
         <div className="xl:w-[45%] w-full border-[5px] lg:order-2 space-y-3 flex flex-col items-center border-[#521572] rounded-[10px] py-5 box-border xl:px-9">
-          <h1 className="xl:text-[40px] w-full lg:text-left text-center text-2xl font-semibold xl:pl-0 lg:px-5 xl:px-0 px-5 tracking-[-0.5px] xl:leading-[50px]">
+          <h1 className="xxl:text-[38px] w-full lg:text-left text-center text-2xl font-semibold xl:pl-0 lg:px-5 xl:px-0 px-5 tracking-[-0.5px] xl:leading-[50px]">
             Your career development is now easier!
           </h1>
-          <p className="xl:text-[28px] text-lg lg:text-left text-center xl:leading-10 leading-8 lg:px-5 px-5 xl:px-0 font-normal tracking-[-0.5px]">
+          <p className="xxl:text-[28px] text-lg lg:text-left text-center xl:leading-10 leading-8 lg:px-5 px-5 xl:px-0 font-normal tracking-[-0.5px]">
             Discover Azerbaijans premier platform for ambitious professionals,
             startups and top-tier corporations. At CorpConnect, we believe in
             creating opportunities, fostering growth and setting the gold

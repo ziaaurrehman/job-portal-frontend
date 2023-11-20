@@ -4,7 +4,7 @@ import { Container } from "@/components/globals/Container";
 import Image from "next/image";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import Link from "next/link";
-import { Plus } from "@/components/icons/icons";
+import { NextArrow, Plus } from "@/components/icons/icons";
 
 export default function AddJobBasics() {
   const [type, setType] = useState();
@@ -327,19 +327,10 @@ export default function AddJobBasics() {
                           <button
                             type="submit"
                             // disabled={isSubmitting}
-                            className="md:text-[22px] flex cursor-pointer justify-center items-center space-x-3 text-lg font-bold border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:w-[254px] w-[150px] md:h-[70px] h-12 md:mt-3 rounded-[10px]"
+                            className="md:text-[22px] hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] flex cursor-pointer justify-center items-center space-x-3 text-lg font-bold border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:w-[254px] w-[150px] md:h-[70px] h-12 md:mt-3 rounded-[10px]"
                           >
                             <p>Continue</p>
-                            <div>
-                              <Image
-                                height={0}
-                                width={0}
-                                sizes="100vw"
-                                src="/next_arrow.svg"
-                                alt="arrow"
-                                className="h-full w-full"
-                              />
-                            </div>
+                            <NextArrow />
                           </button>
                         </Link>
                       </div>

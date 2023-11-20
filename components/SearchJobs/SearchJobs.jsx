@@ -55,10 +55,10 @@ export const SearchJobs = () => {
             placeholder="Distance"
             className="xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] pl-4 placeholder:text-[22px] placeholder:font-bold placeholder:text-[#2D2F30] rounded-[10px]"
           />
-          <button className="xl:w-[203px] xl:h-[60px] h-12 outline-none border-[2px] border-[#451A5B] text-[22px] font-bold bg-white text-[#2D2F30] rounded-[10px]">
+          <button className="xl:w-[203px] xl:h-[60px] h-12 outline-none hover:bg-[#451A5B] hover:text-white border-[2px] border-[#451A5B] text-[22px] font-bold bg-white text-[#2D2F30] rounded-[10px]">
             Find jobs
           </button>
-          <button className="md:w-[230px] w-full h-12 outline-none border-[2px] border-[#451A5B] text-xl font-bold bg-transparent rounded-[10px]">
+          <button className="md:w-[230px] w-full h-12 outline-none hover:bg-[#451A5B] hover:text-white border-[2px] border-[#451A5B] text-xl font-bold bg-transparent rounded-[10px]">
             Advanced filters
           </button>
         </div>

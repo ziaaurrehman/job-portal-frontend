@@ -62,7 +62,7 @@ export default function MessageBox() {
         </div>
 
         <div className="flex justify-end md:pb-14 pb-8">
-          <button className="rounded-[10px] mt-5 w-[136px] text-xl font-semibold text-white h-[57px] bg-[#6F2691]">
+          <button className="rounded-[10px] mt-5 border w-[136px] hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] text-xl font-semibold text-white h-[57px] bg-[#6F2691]">
             Sent
           </button>
         </div>

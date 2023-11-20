@@ -12,26 +12,26 @@ export const Footer = () => {
             corpconnectaz@gmail.com
           </p>
         </div>
-        <div className="grid lg:grid-cols-5 space-y-5 md:grid-cols-4 grid-cols-1 mt-10">
-          <div className="flex md:block justify-center items-center flex-col">
+        <div className="grid lg:grid-cols-5 space-y-5 md:space-y-0 md:grid-cols-4 grid-cols-1 mt-10">
+          <div className="flex md:block justify-center items-start flex-col">
             <h1 className="text-base font-bold text-white">For Jobseekers</h1>
-            <ul className="mt-6 space-y-3 md:block flex items-center flex-col">
+            <ul className="mt-6 space-y-3 md:block flex items-start flex-col">
               <li className="text-base font-normal text-white">Search Jobs</li>
               <li className="text-base font-normal text-white">Employers</li>
               <li className="text-base font-normal text-white">Agencies</li>
             </ul>
           </div>
-          <div className="flex md:block justify-center items-center flex-col">
+          <div className="flex md:block justify-center items-start flex-col">
             <h1 className="text-base font-bold text-white">Popular</h1>
-            <ul className="mt-6 space-y-3 md:block flex items-center flex-col">
+            <ul className="mt-6 space-y-3 md:block flex items-start flex-col">
               <li className="text-base font-normal text-white">Search Jobs</li>
               <li className="text-base font-normal text-white">Employers</li>
               <li className="text-base font-normal text-white">Agencies</li>
             </ul>
           </div>
-          <div className="flex md:block justify-center items-center flex-col">
+          <div className="flex md:block justify-center items-start flex-col">
             <h1 className="text-base font-bold text-white">Recruiters</h1>
-            <ul className="mt-6 space-y-3 md:block flex items-center flex-col">
+            <ul className="mt-6 space-y-3 md:block flex items-start flex-col">
               <li className="text-base font-normal text-white">
                 CV Database Access
               </li>
@@ -44,11 +44,11 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex md:block justify-center items-center flex-col">
+          <div className="flex md:block justify-center items-start flex-col">
             <h1 className="text-base font-bold text-white">
               About the creation
             </h1>
-            <ul className="mt-6 space-y-3 md:block flex items-center flex-col">
+            <ul className="mt-6 space-y-3 md:block flex items-start flex-col">
               <li className="text-base font-normal text-white">About Us </li>
               <li className="text-base font-normal text-white">Contact Us</li>
               <li className="text-base font-normal text-white">Work for Us</li>
@@ -56,11 +56,11 @@ export const Footer = () => {
               <li className="text-base font-normal text-white">FAQ</li>
             </ul>
           </div>
-          <div className="md:col-span-full lg:mt-0 mt-5 lg:col-span-1 lg:block flex flex-col justify-center items-center">
+          <div className="md:col-span-full w-full lg:mt-0 mt-5 lg:col-span-1 lg:block flex flex-col justify-center items-center">
             <h1 className="text-base font-bold text-white">
               Subscribe to our newsletter
             </h1>
-            <div className="flex w-full md:w-1/2 lg:w-full justify-between xl:pr-11 mt-6">
+            <div className="flex w-2/3 lg:w-full justify-between xl:pr-11 mt-6">
               <Image
                 height={45}
                 width={40}
@@ -85,9 +85,11 @@ export const Footer = () => {
                 alt="logo"
                 className="rounded-full h-full"
               />
+              {/* <div className="lg:border-0 w-full border-t border-white"> */}
               <button className="text-white xl:text-xl lg:text-base font-medium">
                 CorpConnect
               </button>
+              {/* </div> */}
             </div>
           </div>
         </div>

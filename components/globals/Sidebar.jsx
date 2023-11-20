@@ -27,7 +27,7 @@ export default function Sidebar({ setHeading }) {
     { id: 4, icon: <Messages />, title: "Messages", link: "message" },
     { id: 5, icon: <Interview />, title: "Interviews", link: "interview" },
     // { id: 6, icon: <Jobs />, title: "Jobs", link: "jobs" },
-    // { id: 7, icon: <Candidates />, title: "Candidates", link: "candidates" },
+    { id: 7, icon: <Candidates />, title: "Candidates", link: "candidates" },
   ];
 
   return (
@@ -40,7 +40,7 @@ export default function Sidebar({ setHeading }) {
                 setMatch(obj.id);
                 setHeading(obj.title);
               }}
-              className={`xl:text-[28px] xl:text-2xl lg:text-base text-sm xl:space-x-5 xl:pt-20 mt-0 flex justify-center items-center ${
+              className={`xxl:text-2xl xl:text-lg lg:text-base text-sm xl:space-x-5 xl:pt-20 mt-0 flex justify-center items-center ${
                 obj.id === match ? "text-[#A117E8]" : "text-[#858585]"
               } font-semibold`}
             >

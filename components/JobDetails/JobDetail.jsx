@@ -106,7 +106,7 @@ export const JobDetail = () => {
               </ul>
               <div className="w-full flex lg:py-10 md:py-5 lg:justify-center items-center">
                 <Link href="/page/apply">
-                  <button className="lg:px-[65px] py-4 px-10 lg:py-[25px] bg-[#6F2691] text-white rounded-[5px] lg:text-[32px] text-2xl font-semibold">
+                  <button className="lg:px-[65px] py-4 border hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] px-10 lg:py-[25px] bg-[#6F2691] text-white rounded-[5px] lg:text-[32px] text-2xl font-semibold">
                     Apply Now
                   </button>
                 </Link>

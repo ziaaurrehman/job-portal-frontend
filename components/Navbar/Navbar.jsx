@@ -26,7 +26,7 @@ export const Navbar = () => {
                 sizes="100vw"
                 className="rounded-full w-full h-full"
               />
-              <button className="text-white text-xl font-medium">
+              <button className="text-white md:text-xl text-xs font-medium">
                 CorpConnect
               </button>
             </div>
@@ -69,11 +69,11 @@ export const Navbar = () => {
                   Post a Job
                 </li>
               </Link>
-              <Link href="/page/dashboard/notification">
+              {/* <Link href="/page/dashboard/notification">
                 <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                   Dashboard
                 </li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
 
@@ -143,14 +143,14 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end hidden w-full py-5 space-x-3">
+      <div className="flex justify-end w-full py-5 space-x-3">
         <Link href="/page/login">
-          <button className="md:w-[110px] w-20 border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
+          <button className="md:w-[110px] w-20 hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
             Sign in
           </button>
         </Link>
         <Link href="/page/signup">
-          <button className="md:w-[110px] w-20 border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
+          <button className="md:w-[110px] w-20 hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
             Sign Up
           </button>
         </Link>

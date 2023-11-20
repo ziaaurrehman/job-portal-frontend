@@ -206,7 +206,7 @@ export default function Layout({ children }) {
                   />
                 </div>
               </button>
-              <button className="border-2 md:h-[78px] h-14 md:text-[30px] text-2xl font-semibold flex justify-center items-center bg-[#6F2691] text-white md:w-[226px] w-40 rounded-[10px] border-[#3E1652]">
+              <button className="border-2 md:h-[78px] h-14 md:text-[30px] hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] text-2xl font-semibold flex justify-center items-center bg-[#6F2691] text-white md:w-[226px] w-40 rounded-[10px] border-[#3E1652]">
                 Post a Job
               </button>
             </div>

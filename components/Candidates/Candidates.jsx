@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import CandidateCard from "../globals/CandidateCard";
 import Image from "next/image";
 import SlickSlider from "../globals/Slider/Slider";
-import { Check } from "../icons/icons";
+import { Check, NextArrow, PrevArrow } from "../icons/icons";
 
 export default function Candidates() {
   const [flyer1, setFlyer1] = useState(false);
@@ -153,31 +153,13 @@ export default function Candidates() {
       </div>
       <CandidateCard />
       <div className="flex w-full justify-center md:py-20 py-10 md:space-x-10 space-x-5">
-        <button className="lg:w-[266px] md:w-[200px] w-[150px] rounded-[10px] text-white space-x-2 lg:p-6 md:p-4 p-2 flex justify-center items-center border-2 border-[#3E1652] lg:text-[32px] md:text-2xl text-lg font-semibold bg-[#6F269180]">
-          <div className="lg:h-[37px] lg:w-[37px] md:h-[25px] md:w-[25px] h-[15px] w-[15px]">
-            <Image
-              height={0}
-              width={0}
-              sizes="100vw"
-              src="/left-arrow.svg"
-              alt="avatar"
-              className="h-full w-full"
-            />
-          </div>
+        <button className="lg:w-[266px] md:w-[200px] hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] w-[150px] rounded-[10px] text-white space-x-2 lg:p-6 md:p-4 p-2 flex justify-center items-center border-2 border-[#3E1652] lg:text-[32px] md:text-2xl text-lg font-semibold bg-[#6F269180]">
+          <PrevArrow height={25} width={25} />
           <span>Previous</span>
         </button>
-        <button className="lg:w-[266px] md:w-[200px] w-[150px] rounded-[10px] text-white space-x-2 lg:p-6 md:p-4 p-2 flex justify-center items-center border-2 border-[#3E1652] lg:text-[32px] md:text-2xl text-lg font-semibold bg-[#6F2691]">
+        <button className="lg:w-[266px] hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] md:w-[200px] w-[150px] rounded-[10px] text-white space-x-2 lg:p-6 md:p-4 p-2 flex justify-center items-center border-2 border-[#3E1652] lg:text-[32px] md:text-2xl text-lg font-semibold bg-[#6F2691]">
           <span>Next</span>
-          <div className="lg:h-[37px] lg:w-[37px] md:h-[25px] md:w-[25px] h-[15px] w-[15px]">
-            <Image
-              height={0}
-              width={0}
-              sizes="100vw"
-              src="/right-arrow.svg"
-              alt="avatar"
-              className="h-full w-full"
-            />
-          </div>
+          <NextArrow height={25} width={25} />
         </button>
       </div>
     </div>
