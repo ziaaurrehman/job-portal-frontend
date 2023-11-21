@@ -10,9 +10,12 @@ import {
   Candidates,
 } from "../icons/icons";
 import Link from "next/link";
+// import { usePathname } from "next/navigation";
 
 export default function Sidebar({ setHeading }) {
   // const [color, setColor] = useState("#858585");
+  // const currentPath = usePathname();
+  // console.log(currentPath); 
   const [match, setMatch] = useState(0);
   const data = [
     { id: 1, icon: <Edit />, title: "Edit profile", link: "editProfile" },

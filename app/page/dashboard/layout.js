@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "@/components/globals/Container";
 import Sidebar from "@/components/globals/Sidebar";
 import Link from "next/link";
@@ -9,6 +9,7 @@ import Filter from "@/components/globals/Filter";
 export default function Layout({ children }) {
   const [heading, setHeading] = useState("");
   const [flyer, setFlyer] = useState(false);
+  useEffect(() => {}, [heading]);
 
   return (
     <Container>
