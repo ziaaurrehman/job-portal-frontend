@@ -18,7 +18,7 @@ export default function Layout({ children }) {
           <h1
             className={`md:text-5xl capitalize w-full ${
               heading === "Jobs" || heading === "Candidates"
-                ? "visible"
+                ? "invisible"
                 : "visible"
             } md:text-left text-center text-xl font-normal line`}
           >

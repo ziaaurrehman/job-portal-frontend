@@ -15,7 +15,7 @@ import { usePathname } from "next/navigation";
 export default function Sidebar({ setHeading }) {
   // const [color, setColor] = useState("#858585");
   const currentPath = usePathname();
- 
+
   const [match, setMatch] = useState(0);
   const data = [
     { id: 1, icon: <Edit />, title: "Edit profile", link: "editProfile" },
@@ -32,16 +32,19 @@ export default function Sidebar({ setHeading }) {
     // { id: 6, icon: <Jobs />, title: "Jobs", link: "jobs" },
     { id: 7, icon: <Candidates />, title: "Candidates", link: "candidates" },
   ];
-
+  const headingTitle = (e, item) => {
+    e.preventDefault();
+    setMatch(item.id);
+    setHeading(item.title);
+  };
   return (
     <>
       <div className="w-full xl:px-10 md:flex px-2 xl:py-0 py-5 xl:block hidden items-center xl:h-screen xl:pt-28 lg:px-5 xl:space-x-0 lg:space-x-10 space-x-5 xl:border-r xl:border-b-0 md:border-b border-black">
         {data.map((obj, _) => (
           <Link key={obj.id} href={`/page/dashboard/${obj.link}`}>
             <button
-              onClick={() => {
-                setMatch(obj.id);
-                setHeading(obj.title);
+              onClick={(e) => {
+                headingTitle(e, obj);
               }}
               className={`xxl:text-2xl xl:text-lg lg:text-base text-sm xl:space-x-5 xl:pt-20 mt-0 flex justify-center items-center ${
                 obj.id === match ? "text-[#A117E8]" : "text-[#858585]"
