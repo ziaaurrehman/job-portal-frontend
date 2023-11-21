@@ -5,51 +5,32 @@ import Sidebar from "@/components/globals/Sidebar";
 import Link from "next/link";
 import Image from "next/image";
 import Filter from "@/components/globals/Filter";
-import {
-  Edit,
-  Notification,
-  Messages,
-  Device,
-  Interview,
-} from "@/components/icons/icons";
+import { Edit, Interview, Jobs, Candidates } from "@/components/icons/icons";
 
 export default function Layout({ children }) {
   const [heading, setHeading] = useState("");
   const [flyer, setFlyer] = useState(false);
+
   const data = [
-    {
-      id: 1,
-      icon: <Edit />,
-      title: "Edit profile",
-      link: "dashboard/editProfile",
-    },
+    { id: 1, icon: <Jobs />, title: "Jobs", link: "/job-interview/jobs" },
     {
       id: 2,
-      icon: <Notification />,
-      title: "Notification",
-      link: "dashboard/notification",
+      icon: <Edit />,
+      title: "Edit profile",
+      link: "job-interview/editProfile",
     },
-
     {
       id: 3,
-      icon: <Device />,
-      title: "Applied jobs",
-      link: "dashboard/applied",
+      icon: <Candidates />,
+      title: "Candidates",
+      link: "job-interview/candidates",
     },
     {
       id: 4,
-      icon: <Messages />,
-      title: "Messages",
-      link: "dashboard/message",
-    },
-    {
-      id: 5,
       icon: <Interview />,
       title: "Interviews",
-      link: "dashboard/interview",
+      link: "job-interview/interview",
     },
-    // { id: 6, icon: <Jobs />, title: "Jobs", link: "jobs" },
-    // { id: 7, icon: <Candidates />, title: "Candidates", link: "candidates" },
   ];
 
   return (
@@ -122,7 +103,7 @@ export default function Layout({ children }) {
         </div>
 
         <div className="xl:hidden w-full">
-          <Sidebar setHeading={setHeading} />
+          <Sidebar heading={heading} data={data} setHeading={setHeading} />
         </div>
 
         <div
@@ -259,7 +240,7 @@ export default function Layout({ children }) {
         </div>
         <div className="flex xl:flex-row flex-col xl:space-x-5 border-t border-black">
           <div className="xl:w-[25%] xl:block hidden w-full">
-            <Sidebar setHeading={setHeading} data={data} />
+            <Sidebar heading={heading} setHeading={setHeading} data={data} />
           </div>
           <div className="xl:w-[75%] pt-10 w-full">{children}</div>
         </div>
