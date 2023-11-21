@@ -9,7 +9,7 @@ import Filter from "@/components/globals/Filter";
 export default function Layout({ children }) {
   const [heading, setHeading] = useState("");
   const [flyer, setFlyer] = useState(false);
-  useEffect(() => {}, [heading]);
+  useEffect(() => {}, []);
 
   return (
     <Container>
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
           <h1
             className={`md:text-5xl capitalize w-full ${
               heading === "Jobs" || heading === "Candidates"
-                ? "invisible"
+                ? "visible"
                 : "visible"
             } md:text-left text-center text-xl font-normal line`}
           >
