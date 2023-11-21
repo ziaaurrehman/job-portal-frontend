@@ -143,24 +143,24 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end w-full py-5 space-x-3">
+      <div className="flex justify-end md:flex-row flex-col w-full py-5 space-y-3 md:space-y-0 md:space-x-3">
         <Link href="/page/dashboard/notification">
-          <button className="w-auto px-3 hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
+          <button className="w-full px-3 hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
             flow
           </button>
         </Link>
         <Link href="/page/job-interview/jobs">
-          <button className="w-auto px-3 hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
+          <button className="w-full px-3 hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
             Interview flow
           </button>
         </Link>
         <Link href="/page/login">
-          <button className="md:w-[110px] w-20 hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
+          <button className="md:w-[110px] w-full hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
             Sign in
           </button>
         </Link>
         <Link href="/page/signup">
-          <button className="md:w-[110px] w-20 hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
+          <button className="md:w-[110px] w-full hover:bg-transparent hover:text-[#A117E8] border border-[#A117E8] md:h-[55px] h-10 rounded-[10px] bg-[#321D3C] text-base font-normal text-white">
             Sign Up
           </button>
         </Link>
