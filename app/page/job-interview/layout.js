@@ -6,10 +6,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Filter from "@/components/globals/Filter";
 import { Edit, Interview, Jobs, Candidates } from "@/components/icons/icons";
+// import { usePathname } from "next/navigation";
 
 export default function Layout({ children }) {
   const [heading, setHeading] = useState("");
   const [flyer, setFlyer] = useState(false);
+  // const currentPath = usePathname();
+  // console.log(currentPath);
 
   const data = [
     { id: 1, icon: <Jobs />, title: "Jobs", link: "/job-interview/jobs" },
