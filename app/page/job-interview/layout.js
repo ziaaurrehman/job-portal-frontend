@@ -10,7 +10,6 @@ import { Edit, Interview, Jobs, Candidates } from "@/components/icons/icons";
 export default function Layout({ children }) {
   const [heading, setHeading] = useState("");
   const [flyer, setFlyer] = useState(false);
-  // useEffect(() => {}, [heading]);
 
   const data = [
     { id: 1, icon: <Jobs />, title: "Jobs", link: "/job-interview/jobs" },
