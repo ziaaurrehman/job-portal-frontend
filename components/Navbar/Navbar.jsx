@@ -59,7 +59,7 @@ export const Navbar = () => {
               {/* <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                 My Clients
               </li> */}
-              <Link href="/about">
+              <Link href="/page/about-us">
                 <li className="text-white hover:bg-[#7B15B0] w-[136px] h-[58px] rounded-[9px] flex justify-center items-center text-lg font-medium">
                   About Us
                 </li>

@@ -12,26 +12,26 @@ export default function Sidebar({ setHeading, data }) {
     // e.preventDefault();
     setMatch(item?.id);
     setHeading(item?.title);
-    router.push(`/page/${item.link}`);
+    // router.push(`/page/${item.link}`);
   };
   return (
     <>
       <div className="w-full xl:px-10 md:flex px-2 xl:py-0 py-5 xl:block hidden items-center xl:h-screen xl:pt-28 lg:px-5 xl:space-x-0 lg:space-x-10 space-x-5 xl:border-r xl:border-b-0 md:border-b border-black">
         {data?.map((obj, _) => (
-          // <Link key={obj.id} href={`/page/${obj.link}`}>
-          <button
-            key={obj.id}
-            onClick={() => {
-              headingTitle(obj);
-            }}
-            className={`xxl:text-2xl xl:text-lg lg:text-base text-sm xl:space-x-5 xl:pt-20 mt-0 flex justify-center items-center ${
-              obj.id === match ? "text-[#A117E8]" : "text-[#858585]"
-            } font-semibold`}
-          >
-            {obj.icon}
-            <p>{obj.title}</p>
-          </button>
-          // </Link>
+          <Link key={obj.id} legacyBehavior href={`/page/${obj.link}`}>
+            <button
+              key={obj.id}
+              onClick={() => {
+                headingTitle(obj);
+              }}
+              className={`xxl:text-2xl xl:text-lg lg:text-base text-sm xl:space-x-5 xl:pt-20 mt-0 flex justify-center items-center ${
+                obj.id === match ? "text-[#A117E8]" : "text-[#858585]"
+              } font-semibold`}
+            >
+              {obj.icon}
+              <p>{obj.title}</p>
+            </button>
+          </Link>
         ))}
       </div>
 
