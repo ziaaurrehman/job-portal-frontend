@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function JobCard() {
@@ -27,7 +28,7 @@ export default function JobCard() {
       {data.map((obj, _) => (
         <div
           key={obj.id}
-          className="border-[5px] md:py-10 py-5 px-2 w-full justify-between flex lg:flex-row flex-col space-x-10 lg:items-center md:space-y-5 space-y-5 rounded-[10px] border-[#735681]"
+          className="border-[5px] md:py-10 py-5 px-2 w-full justify-between flex lg:flex-row flex-col space-x-5 xxl:space-x-10 lg:items-center md:space-y-5 space-y-5 rounded-[10px] border-[#735681]"
         >
           <div className="flex md:pl-10 px-2">
             <div className="flex space-x-3">
@@ -36,13 +37,15 @@ export default function JobCard() {
                   id="default-checkbox"
                   type="checkbox"
                   value=""
-                  className="w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-6 h-6 text-[#735681] bg-[#735681] border-[#735681] rounded focus:ring-[#735681] dark:focus:ring-[#735681]"
                 />
               </div>
               <div className="space-y-2">
-                <p className="text-base font-medium text-[#00A9FF]">
-                  UIUX Designer
-                </p>
+                <Link href="/page/job-interview/candidates">
+                  <p className="text-base font-medium hover:underline text-[#00A9FF]">
+                    UIUX Designer
+                  </p>
+                </Link>
                 <p className="text-sm font-normal">Lahore</p>
                 <p className="text-sm font-normal">Posted: 6 September</p>
                 <p className="text-sm font-normal">2023</p>

@@ -8,13 +8,13 @@ export default function Messages() {
   return (
     <Container>
       <div className="lg:flex lg:space-x-3">
-        <div className="lg:w-[30%] w-full">
+        <div className="lg:w-[50%] w-full">
           <AllMessages />
         </div>
-        <div className="lg:w-[40%] w-full">
+        {/* <div className="lg:w-[40%] w-full">
           <MessageBox />
-        </div>
-        <div className="lg:w-[30%] w-full">
+        </div> */}
+        <div className="lg:w-[5s0%] w-full">
           <Info />
         </div>
       </div>

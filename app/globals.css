@@ -70,3 +70,6 @@ select.custom-select {
   height: 25px !important;
   width: 25px !important;
 }
+input[type="checkbox"] {
+  accent-color: #735681;
+}
