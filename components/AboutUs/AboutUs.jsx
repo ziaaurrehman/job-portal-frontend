@@ -9,10 +9,10 @@ export const AboutUs = () => {
           about Us
         </h1>
         <div className="md:mt-20 mt-10 md:py-12 py-6 h-auto w-full md:px-16 p-3 rounded-[10px] border-[#5E3D6E] border-[5px]">
-          <h1 className="xl:text-[64px] md:text-left text-center md:text-5xl text-3xl font-medium tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
+          <h1 className="xxl:text-5xl md:text-left text-center md:text-5xl text-3xl font-medium tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
             Welcome To
           </h1>
-          <p className="capitalize md:text-left line text-center md:py-5 lg:text-4xl md:text-xl text-base font-medium">
+          <p className="capitalize md:text-left line2 text-center md:py-5 lg:text-2xl md:text-xl text-base font-medium">
             Welcome to CorpConnect, Azerbaijans corporate recruitment hub. Our
             platform, built against the dynamic background of the developing
             corporate sector of Azerbaijan, is not just a point of contact. It
@@ -23,10 +23,10 @@ export const AboutUs = () => {
         </div>
 
         <div className="md:mt-20 mt-10 md:py-12 py-6 h-auto w-full md:px-16 p-3 rounded-[10px] border-[#5E3D6E] border-[5px]">
-          <h1 className="xl:text-[64px] capitalize md:text-left text-center md:text-5xl text-3xl font-medium tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
+          <h1 className="xxl:text-5xl capitalize md:text-left text-center md:text-5xl text-3xl font-medium tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
             Our missions
           </h1>
-          <p className="capitalize md:text-left line text-center md:py-5 lg:text-4xl md:text-xl text-base font-medium">
+          <p className="capitalize md:text-left line2 text-center md:py-5 lg:text-2xl md:text-xl text-base font-medium">
             At CorpConnect, we have embarked on a mission that goes beyond the
             simple. We are not just about connecting job seekers with employers;
             we are building an efficient development path. In the heart of

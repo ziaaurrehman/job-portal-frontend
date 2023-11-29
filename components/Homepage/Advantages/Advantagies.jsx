@@ -6,15 +6,15 @@ export const Advantagies = () => {
   return (
     <Container>
       <div className="mt-10 lg:pb-40 md:pb-20 pb-10">
-        <h1 className="xl:text-[64px] capitalize text-center md:text-5xl text-4xl font-semibold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
+        <h1 className="xxl:text-5xl capitalize text-center md:text-4xl text-3xl font-semibold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
           our advantages
         </h1>
         <div className="md:mt-10 mt-5 flex md:flex-row space-y-5 md:space-y-0 lg:space-x-0 md:space-x-5 flex-col">
           <div className="w-full flex flex-col items-center">
-            <h1 className="xxl:text-[40px] xxl:w-[38%] lg:w-1/2 w-full capitalize text-left md:text-4xl text-2xl font-extrabold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
+            <h1 className="xxl:text-4xl xxl:w-[38%] lg:w-1/2 w-full capitalize text-left text-2xl font-extrabold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
               Job Seekers
             </h1>
-            <ul className="flex md:mt-10 mt-5 flex-col xl:w-[38%] lg:w-1/2 w-full space-y-5 items-center justify-center">
+            <ul className="flex xl:mt-10 mt-5 flex-col xl:w-[38%] lg:w-1/2 w-full space-y-5 items-center justify-center">
               <li className="flex justify-center md:items-center space-x-2">
                 <div className="h-full mt-3">
                   <div className="h-[5px] w-[5px] rounded-full bg-black"></div>
@@ -53,10 +53,10 @@ export const Advantagies = () => {
           </div>
 
           <div className="w-full flex flex-col items-center justify-center lg:justify-start">
-            <h1 className="xl:text-[40px] xl:w-[38%] lg:w-1/2 w-full capitalize text-left md:text-4xl text-2xl font-extrabold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
+            <h1 className="xxl:text-4xl xxl:w-[38%] lg:w-1/2 w-full capitalize text-left text-2xl font-extrabold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
               Employers
             </h1>
-            <ul className="flex md:mt-10 mt-5 flex-col xl:w-[38%] lg:w-1/2 w-full space-y-5 items-center justify-center">
+            <ul className="flex xl:mt-10 mt-5 flex-col xl:w-[38%] lg:w-1/2 w-full space-y-5 items-center justify-center">
               <li className="flex justify-center md:items-center space-x-2">
                 <div className="h-full mt-3">
                   <div className="h-[5px] w-[5px] rounded-full bg-black"></div>

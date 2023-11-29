@@ -39,21 +39,19 @@ export default function CandidateCard() {
                   id="default-checkbox"
                   type="checkbox"
                   value=""
-                  className="w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-6 h-6 bg-gray-100 border-[#6F2691] rounded"
                 />
               </div>
               <div className="space-y-2">
-                <p className="text-xl font-medium text-[#00A9FF]">
+                <p className="text-base font-medium text-[#00A9FF]">
                   Raheel Ahmed
                 </p>
                 <div className="hidden">
-                  <p className="text-[15px] font-medium">
-                    Lahore • Applied today
-                  </p>
+                  <p className="text-sm font-medium">Lahore • Applied today</p>
                 </div>
                 <div>
-                  <p className="text-xl font-normal">Php Developer Lahore</p>
-                  <p className="text-xl font-normal">Applied: Sep 6</p>
+                  <p className="text-base font-normal">Php Developer Lahore</p>
+                  <p className="text-base font-normal">Applied: Sep 6</p>
                 </div>
               </div>
             </div>
@@ -81,9 +79,9 @@ export default function CandidateCard() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <p className="text-base font-normal">Shortlisted</p>
+                <p className="text-sm font-normal">Shortlisted</p>
               </div>
-              <p className="text-xl text-[#2F6AFF] font-medium">Send message</p>
+              <p className="text-lg text-[#2F6AFF] font-medium">Send message</p>
             </div>
           </div>
 

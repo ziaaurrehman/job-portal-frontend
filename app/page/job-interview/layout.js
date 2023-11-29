@@ -13,12 +13,12 @@ export default function Layout({ children }) {
 
   const data = [
     { id: 1, icon: <Jobs />, title: "Jobs", link: "/job-interview/jobs" },
-    {
-      id: 2,
-      icon: <Edit />,
-      title: "Edit profile",
-      link: "job-interview/editProfile",
-    },
+    // {
+    //   id: 2,
+    //   icon: <Edit />,
+    //   title: "Edit profile",
+    //   link: "job-interview/editProfile",
+    // },
     {
       id: 3,
       icon: <Candidates />,

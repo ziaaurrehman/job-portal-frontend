@@ -94,17 +94,17 @@ export default function AddJobBasics() {
                         <h1 className="md:text-[32px] w-full pb-5 text-xl font-medium">
                           Job type*
                         </h1>
-                        <div className="md:mt-7 mt-2 grid xl:grid-cols-5 lg:grid-cols-4 grid-cols-2 md:gap-12 gap-6">
+                        <div className="md:mt-7 mt-2 grid xl:grid-cols-5 lg:grid-cols-4 grid-cols-2 md:gap-8 gap-6">
                           {jobType?.map((obj, i) => (
                             <button
                               key={obj.id}
                               onClick={() => setType(i)}
-                              className={`md:border-[6px] border-[3px] ${
+                              className={`w-auto border-[3px] ${
                                 type === i ? "text-white bg-[#A117E880]" : ""
-                              } rounded-[34px] justify-center items-center flex border-[#6D159A] md:p-5 px-5 py-3`}
+                              } rounded-[34px] justify-center items-center flex border-[#6D159A] md:p-3 px-5`}
                             >
                               <Plus />
-                              <p className="md:text-xl whitespace-nowrap text-xs font-medium">
+                              <p className="md:text-sm whitespace-nowrap text-xs font-medium">
                                 {obj.text}
                               </p>
                             </button>

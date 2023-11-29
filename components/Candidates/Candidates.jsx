@@ -100,9 +100,9 @@ export default function Candidates() {
         <div className="lg:w-2/3 w-full">
           <SlickSlider />
         </div>
-        <button className="md:w-[212px] w-[180px] md:h-[71px] h-[50px] md:text-2xl text-lg font-medium rounded-[10px] border-2 border-[#5E3D6E]">
+        {/* <button className="md:w-[212px] w-[180px] md:h-[71px] h-[50px] md:text-2xl text-lg font-medium rounded-[10px] border-2 border-[#5E3D6E]">
           Add candidate
-        </button>
+        </button> */}
       </div>
       <div className="border py-5 lg:pr-10 w-full justify-between flex lg:flex-row flex-col space-x-10 lg:items-center space-y-0 rounded-tl-[10px]  rounded-tr-[10px] border-[#735681]">
         <div className="flex lg:pl-10 px-2">

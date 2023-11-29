@@ -17,31 +17,31 @@ export default function Layout({ children }) {
   const [heading, setHeading] = useState("");
   const [flyer, setFlyer] = useState(false);
   const data = [
-    {
-      id: 1,
-      icon: <Edit />,
-      title: "Edit profile",
-      link: "dashboard/editProfile",
-    },
-    {
-      id: 2,
-      icon: <Notification />,
-      title: "Notification",
-      link: "dashboard/notification",
-    },
+    // {
+    //   id: 1,
+    //   icon: <Edit />,
+    //   title: "Edit profile",
+    //   link: "dashboard/editProfile",
+    // },
+    // {
+    //   id: 2,
+    //   icon: <Notification />,
+    //   title: "Notification",
+    //   link: "dashboard/notification",
+    // },
 
-    {
-      id: 3,
-      icon: <Device />,
-      title: "Applied jobs",
-      link: "dashboard/applied",
-    },
-    {
-      id: 4,
-      icon: <Messages />,
-      title: "Messages",
-      link: "dashboard/message",
-    },
+    // {
+    //   id: 3,
+    //   icon: <Device />,
+    //   title: "Applied jobs",
+    //   link: "dashboard/applied",
+    // },
+    // {
+    //   id: 4,
+    //   icon: <Messages />,
+    //   title: "Messages",
+    //   link: "dashboard/message",
+    // },
     {
       id: 5,
       icon: <Interview />,

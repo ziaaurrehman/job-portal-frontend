@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 export default function Sidebar({ setHeading, data }) {
   const [match, setMatch] = useState(0);
-  const router = useRouter();
+  // const router = useRouter();
 
   const headingTitle = (item) => {
-    console.log(item, "item");
+    // console.log(item, "item");
     // e.preventDefault();
     setMatch(item?.id);
     setHeading(item?.title);
