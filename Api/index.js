@@ -33,14 +33,12 @@ axios.interceptors.request.use(
 );
 
 export const signupUser = async (form) => {
-  console.log(form, "api");
   try {
     const res = await axios.post(`/signup`, form);
     return res;
   } catch (error) {
     Swal.fire({
       width: "20em",
-      height: "20em",
       position: "center",
       icon: "error",
       title: "Sorry...",

@@ -106,7 +106,7 @@ export default function Layout({ children }) {
               </div>
             </Link>
 
-            <Link href="/page/dashboard/message">
+            <Link href="/profile">
               <div className="h-10 w-11">
                 <Image
                   height={0}

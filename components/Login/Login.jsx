@@ -5,9 +5,14 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import Link from "next/link";
 import Image from "next/image";
 import NotRegistered from "./NotRegistered";
+import { loginUser } from "@/Api";
+import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
 
 export const Login = () => {
   // const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
+
   return (
     <Container>
       <div>
@@ -23,7 +28,31 @@ export const Login = () => {
                   password: "",
                 }}
                 onSubmit={async (values) => {
-                  console.log(values);
+                  try {
+                    const res = await loginUser(values);
+                    if (res?.status === 200) {
+                      Swal.fire({
+                        width: "20em",
+                        position: "center",
+                        icon: "success",
+                        title: "Signed in successfully",
+                        showConfirmButton: false,
+                        timer: 1500,
+                      });
+                      router.push(`/`);
+                    }
+                  } catch (error) {
+                    Swal.fire({
+                      width: "20em",
+                      title: `${error?.data?.message}`,
+                      showClass: {
+                        popup: "animate__animated animate__fadeInDown",
+                      },
+                      hideClass: {
+                        popup: "animate__animated animate__fadeOutUp",
+                      },
+                    });
+                  }
                 }}
               >
                 {({ isSubmitting, errors, touched }) => (
