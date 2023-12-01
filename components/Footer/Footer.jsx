@@ -100,7 +100,7 @@ export const Footer = () => {
                 alt="instagram"
               />
             </div>
-            <div className="flex justify-center md:w-1/2 w-full h-[66px] lg:w-[99px] mt-5">
+            <div className="flex lg:justify-start justify-center md:w-1/2 w-full h-[66px] lg:w-full mt-5">
               <Image
                 height={66}
                 width={50}

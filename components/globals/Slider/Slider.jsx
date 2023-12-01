@@ -37,6 +37,13 @@ export default function SlickSlider() {
     slickPrev: <PrevArrow />,
     responsive: [
       {
+        breakpoint: 1282,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
@@ -61,31 +68,39 @@ export default function SlickSlider() {
   };
 
   return (
-    <div className="w-full lg:ml-10 px-10 mx-auto">
+    <div className="w-full lg:ml-10 px-5 md:px-0  mx-auto">
       <Slider {...settings}>
-        <div className="group mt-3 relative cursor-pointer">
-          <div className="">
-            <p className="md:text-xl truncate text-base font-medium leading-8">
+        <div className="w-full mt-3 relative cursor-pointer">
+          <div className="group w-[85%]">
+            <p className="md:text-xl whitespace-nowrap truncate text-base font-medium leading-8">
               514Awaiting Review
             </p>
             <hr className="border-[3px] rounded border-[#A117E8] cursor-pointe transition-all duration-500 invisible group-hover:visible" />
           </div>
         </div>
-        <div className="group mt-3 relative cursor-pointer">
-          <p className="md:text-xl text-base font-medium leading-8">
-            8 Reviewed
-          </p>
-          <hr className="border-[3px] rounded border-[#A117E8] cursor-pointe transition-all duration-500 invisible group-hover:visible" />
+        <div className="w-full mt-3 relative cursor-pointer">
+          <div className="group w-[80%]">
+            <p className="md:text-xl whitespace-nowrap text-base font-medium leading-8">
+              8 Reviewed
+            </p>
+            <hr className="border-[3px] rounded border-[#A117E8] cursor-pointe transition-all duration-500 invisible group-hover:visible" />
+          </div>
         </div>
-        <div className="group mt-3 relative cursor-pointer">
-          <p className="md:text-xl text-base font-medium leading-8">
-            41Rejecting
-          </p>
-          <hr className="border-[3px] rounded border-[#A117E8] cursor-pointe transition-all duration-500 invisible group-hover:visible" />
+        <div className="w-full mt-3 relative cursor-pointer">
+          <div className="group w-[80%]">
+            <p className="md:text-xl whitespace-nowrap text-base font-medium leading-8">
+              41Rejecting
+            </p>
+            <hr className="border-[3px] rounded border-[#A117E8] cursor-pointe transition-all duration-500 invisible group-hover:visible" />
+          </div>
         </div>
-        <div className="group mt-3 relative cursor-pointer">
-          <p className="md:text-xl text-base font-medium leading-8">0 Hired</p>
-          <hr className="border-[3px] rounded border-[#A117E8] cursor-pointe transition-all duration-500 invisible group-hover:visible" />
+        <div className="w-full mt-3 relative cursor-pointer">
+          <div className="group w-[50%]">
+            <p className="md:text-xl whitespace-nowrap text-base font-medium leading-8">
+              0 Hired
+            </p>
+            <hr className="border-[3px] rounded border-[#A117E8] cursor-pointe transition-all duration-500 invisible group-hover:visible" />
+          </div>
         </div>
       </Slider>
     </div>

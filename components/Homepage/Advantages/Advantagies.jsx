@@ -11,7 +11,7 @@ export const Advantagies = () => {
         </h1>
         <div className="md:mt-10 mt-5 flex md:flex-row space-y-5 md:space-y-0 lg:space-x-0 md:space-x-5 flex-col">
           <div className="w-full flex flex-col items-center">
-            <h1 className="xxl:text-4xl xxl:w-[38%] lg:w-1/2 w-full capitalize text-left text-2xl font-extrabold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
+            <h1 className="xxl:text-4xl xl:w-[38%] lg:w-1/2 w-full capitalize text-left text-2xl font-extrabold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
               Job Seekers
             </h1>
             <ul className="flex xl:mt-10 mt-5 flex-col xl:w-[38%] lg:w-1/2 w-full space-y-5 items-center justify-center">
@@ -53,7 +53,7 @@ export const Advantagies = () => {
           </div>
 
           <div className="w-full flex flex-col items-center justify-center lg:justify-start">
-            <h1 className="xxl:text-4xl xxl:w-[38%] lg:w-1/2 w-full capitalize text-left text-2xl font-extrabold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
+            <h1 className="xxl:text-4xl xl:w-[38%] lg:w-1/2 w-full capitalize text-left text-2xl font-extrabold tracking-[-0.5px] leading-[70px] xl:leading-[100px]">
               Employers
             </h1>
             <ul className="flex xl:mt-10 mt-5 flex-col xl:w-[38%] lg:w-1/2 w-full space-y-5 items-center justify-center">

@@ -3,9 +3,12 @@ import React from "react";
 import { Container } from "../globals/Container";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import Link from "next/link";
+import { signupUser } from "@/Api";
+import Swal from "sweetalert2";
 
 export const Signup = () => {
   // const [showPassword, setShowPassword] = useState(false);
+
   return (
     <Container>
       <div>
@@ -26,6 +29,33 @@ export const Signup = () => {
                 }}
                 onSubmit={async (values) => {
                   console.log(values);
+                  // try {
+                  //   const res = await signupUser(values);
+                  //   if (res?.status === 200) {
+                  //     Swal.fire({
+                  //       width: "20em",
+                  //       height: "20em",
+                  //       position: "center",
+                  //       icon: "success",
+                  //       title: "Sign up successful",
+                  //       showConfirmButton: false,
+                  //       timer: 1500,
+                  //     });
+                  //     navigation("/login");
+                  //   }
+                  // } catch (error) {
+                  //   Swal.fire({
+                  //     width: "20em",
+                  //     height: "20em",
+                  //     title: `${error?.data?.message}`,
+                  //     showClass: {
+                  //       popup: "animate__animated animate__fadeInDown",
+                  //     },
+                  //     hideClass: {
+                  //       popup: "animate__animated animate__fadeOutUp",
+                  //     },
+                  //   });
+                  // }
                 }}
               >
                 {({ isSubmitting, errors, touched }) => (
@@ -156,15 +186,15 @@ export const Signup = () => {
                     </label>
                   </div> */}
                     <div className="w-full flex justify-center items-center mt-14">
-                      <Link href="/page/post-job">
-                        <button
-                          type="submit"
-                          disabled={isSubmitting}
-                          className="md:text-[22px] text-lg font-bold hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:w-[254px] w-[150px] md:h-[70px] h-12 md:mt-3 rounded-[10px]"
-                        >
-                          Register
-                        </button>
-                      </Link>
+                      {/* <Link href="/page/post-job"> */}
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="md:text-[22px] text-lg font-bold hover:border-[#6F2691] hover:bg-transparent hover:text-[#6F2691] border text-white border-[#45155D] px-[30px] bg-[#6F2691] md:w-[254px] w-[150px] md:h-[70px] h-12 md:mt-3 rounded-[10px]"
+                      >
+                        Register
+                      </button>
+                      {/* </Link> */}
                     </div>
                   </Form>
                 )}
